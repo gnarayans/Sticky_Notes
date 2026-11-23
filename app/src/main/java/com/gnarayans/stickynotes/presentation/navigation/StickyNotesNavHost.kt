@@ -2,6 +2,7 @@ package com.gnarayans.stickynotes.presentation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.compose.dropUnlessResumed
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -26,7 +27,8 @@ fun StickyNotesNavHost(
         }
         composable<NoteEditorDestination> {
             NoteEditorScreen(
-                onNavigateBack = { navController.popBackStack() },
+                // Ignore repeated back requests once the editor is leaving (e.g. save + back).
+                onNavigateBack = dropUnlessResumed { navController.popBackStack() },
             )
         }
     }

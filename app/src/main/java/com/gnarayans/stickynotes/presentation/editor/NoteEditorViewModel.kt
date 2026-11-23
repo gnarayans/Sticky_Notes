@@ -79,10 +79,10 @@ class NoteEditorViewModel @Inject constructor(
             saveNote(note)
                 .onSuccess { sendEffect(NoteEditorEffect.NavigateBack) }
                 .onFailure { error ->
+                    setState { copy(isSaving = false) }
                     val reason = if (error is EmptyNoteException) Reason.EmptyNote else Reason.Unknown
                     sendEffect(NoteEditorEffect.ShowError(reason))
                 }
-            setState { copy(isSaving = false) }
         }
     }
 
