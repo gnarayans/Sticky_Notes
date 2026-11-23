@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sticky Notes</string>
+    <string name="notes_title">My sticky notes</string>
+    <string name="notes_empty">No notes yet.\nTap + to stick your first note.</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="add_note">Add note</string>
+    <string name="pin_note">Pin note</string>
+    <string name="unpin_note">Unpin note</string>
+    <string name="delete_note">Delete note</string>
+    <string name="save_note">Save note</string>
+    <string name="navigate_back">Navigate back</string>
+    <string name="new_note">New note</string>
+    <string name="edit_note">Edit note</string>
+    <string name="note_title_hint">Title</string>
+    <string name="note_content_hint">Write something…</string>
+    <string name="note_color">Note colour %1$s</string>
+    <string name="error_empty_note">A note needs a title or some content</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+</resources>

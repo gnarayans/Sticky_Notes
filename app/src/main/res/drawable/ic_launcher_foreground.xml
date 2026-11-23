@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Sticky note with a folded corner -->
+    <path
+        android:fillColor="#FBC02D"
+        android:pathData="M34,34h40v28l-12,12h-28z" />
+    <path
+        android:fillColor="#F57F17"
+        android:pathData="M62,74v-12h12z" />
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M40,44h28v3h-28zM40,52h28v3h-28zM40,60h16v3h-16z" />
+</vector>
